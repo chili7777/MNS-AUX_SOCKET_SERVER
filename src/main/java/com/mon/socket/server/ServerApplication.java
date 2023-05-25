@@ -21,7 +21,7 @@ public class ServerApplication
 
         while (true)
         {
-            System.out.println("rest");
+            System.out.println("Calling server");
             Socket socket = serverSocket.accept();
             new Thread(() -> handleClient(socket)).start();
         }
